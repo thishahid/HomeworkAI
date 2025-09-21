@@ -8,9 +8,9 @@ class GeminiService {
   GeminiService({required this.apiKey});
 
   Future<String> solveHomework(String imagePath) async {
-    final url = Uri.parse(
-      'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=$apiKey',
-    );
+    final baseUrl =
+        'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent';
+    final url = Uri.parse('$baseUrl?key=$apiKey');
 
     final file = File(imagePath);
     final bytes = await file.readAsBytes();

@@ -71,7 +71,8 @@ class ApiKeyInput extends StatelessWidget {
               WidgetSpan(
                 child: GestureDetector(
                   onTap: () {
-                    // In a real app, you would launch the URL
+                    // it would launch the URL "https://aistudio.google.com/apikey"
+                    // but since we cannot use url_launcher package, we leave it empty
                   },
                   child: Text(
                     'Get one from Google AI Studio',

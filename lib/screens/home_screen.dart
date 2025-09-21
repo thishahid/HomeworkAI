@@ -89,7 +89,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('AI Homework Solver'),
+        title: const Text('By Shahid'),
         centerTitle: true,
       ),
       body: SingleChildScrollView(
@@ -165,7 +165,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     child: _StepCard(
                       icon: Icons.psychology,
                       title: 'AI Analysis',
-                      description: 'Our AI analyzes your problem',
+                      description: 'Our AI analyzes all of your problem',
                       stepNumber: '2',
                     ),
                   ),
